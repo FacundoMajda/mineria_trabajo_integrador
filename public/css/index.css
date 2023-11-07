@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Estilo general del formulario */
+.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titles {
+    display: flex;
+    justify-content: center;    
+    color: #127468;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas de preguntas */
+label {
+    font-weight: bold;
+    color: #009688;
+}
+
+
+/* Estilo del botón de envío */
+button.btn-primary {
+    background-color: #009688;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #009687b9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar-brand {
+    color: aliceblue;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-brand:hover {
+    color: rgb(61, 61, 61);
+}
