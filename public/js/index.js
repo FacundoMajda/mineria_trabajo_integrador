@@ -98,18 +98,18 @@ cargarOpciones(
   "id_materia",
   "descripcion"
 );
-cargarOpciones(
-  "/api/materias",
-  "materia-pregunta-12",
-  "id_materia",
-  "descripcion"
-);
-cargarOpciones(
-  "/api/materias",
-  "materia-pregunta-13",
-  "id_materia",
-  "descripcion"
-);
+// cargarOpciones(
+//   "/api/materias",
+//   "materia-pregunta-12",
+//   "id_materia",
+//   "descripcion"
+// );
+// cargarOpciones(
+//   "/api/materias",
+//   "materia-pregunta-13",
+//   "id_materia",
+//   "descripcion"
+// );
 
 const form = document.querySelector("form");
 form.addEventListener("submit", async (event) => {
@@ -119,7 +119,7 @@ form.addEventListener("submit", async (event) => {
   const genero = document.getElementById("genero").value;
   const localidad = document.getElementById("localidad").value;
   const nivel = document.getElementById("nivel").value;
-  const comentario = document.getElementById("comentario").value;
+  // const comentario = document.getElementById("comentario").value;
 
   const respuesta1 = document.getElementById("materia-pregunta-1").value;
   const respuesta2 = document.getElementById("materia-pregunta-2").value;
@@ -132,8 +132,8 @@ form.addEventListener("submit", async (event) => {
   const respuesta9 = document.getElementById("materia-pregunta-9").value;
   const respuesta10 = document.getElementById("materia-pregunta-10").value;
   const respuesta11 = document.getElementById("materia-pregunta-11").value;
-  const respuesta12 = document.getElementById("materia-pregunta-12").value;
-  const respuesta13 = document.getElementById("materia-pregunta-13").value;
+  // const respuesta12 = document.getElementById("materia-pregunta-12").value;
+  // const respuesta13 = document.getElementById("materia-pregunta-13").value;
 
   //validaciones
   if (!edad || !genero || !localidad || !nivel) {
@@ -164,8 +164,8 @@ form.addEventListener("submit", async (event) => {
     respuesta9: respuesta9,
     respuesta10: respuesta10,
     respuesta11: respuesta11,
-    respuesta12: respuesta12,
-    respuesta13: respuesta13,
+    // respuesta12: respuesta12,
+    // respuesta13: respuesta13,
   };
 
   try {
