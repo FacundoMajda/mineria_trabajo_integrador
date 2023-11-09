@@ -3,7 +3,7 @@ import { Sequelize, DataTypes } from "sequelize";
 import { Logger } from "../loaders/logger.js";
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME || "ecommerce",
+  process.env.DB_NAME || "bigdata",
   process.env.DB_USER || "root",
   process.env.DB_PASSWORD || "",
   {

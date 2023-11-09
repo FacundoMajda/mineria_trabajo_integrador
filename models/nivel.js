@@ -13,20 +13,20 @@ const NivelModel = sequelize.define("Nivel", {
   },
 });
 
-const niveles = [
-  { descripcion: "Secundaria completa" },
-  { descripcion: "Secundaria incompleta" },
-  { descripcion: "Terciario completo" },
-  { descripcion: "Terciario incompleto" },
-  { descripcion: "Universitario completo" },
-  { descripcion: "Universitario incompleto" },
-];
+// const niveles = [
+//   { descripcion: "Secundaria completa" },
+//   { descripcion: "Secundaria incompleta" },
+//   { descripcion: "Terciario completo" },
+//   { descripcion: "Terciario incompleto" },
+//   { descripcion: "Universitario completo" },
+//   { descripcion: "Universitario incompleto" },
+// ];
 
-NivelModel.bulkCreate(niveles)
-  .then(() => {
-    console.log("Los niveles se han cargado correctamente");
-  })
-  .catch((error) => {
-    console.error("Error al cargar los niveles: ", error);
-  });
+// NivelModel.bulkCreate(niveles)
+//   .then(() => {
+//     console.log("Los niveles se han cargado correctamente");
+//   })
+//   .catch((error) => {
+//     console.error("Error al cargar los niveles: ", error);
+//   });
 export default NivelModel;

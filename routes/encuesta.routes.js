@@ -1,12 +1,17 @@
-import { Router } from "express";
-import EncuestaController from "../controllers/EncuestaController";
+import express from "express";
+import {
+  getGeneros,
+  getLocalidades,
+  getNiveles,
+} from "../controllers/options.js";
 
-const router = Router();
+import { guardarEncuesta } from "../controllers/encuesta.controller.js";
+const router = express.Router();
 
-router.post("/", EncuestaController.crearEncuesta);
-router.get("/", EncuestaController.obtenerEncuestas);
-router.get("/:id", EncuestaController.obtenerEncuesta);
-router.put("/:id", EncuestaController.actualizarEncuesta);
-router.delete("/:id", EncuestaController.eliminarEncuesta);
+router.post("/guardar-encuesta", guardarEncuesta);
+
+router.get("/generos", getGeneros);
+router.get("/localidades", getLocalidades);
+router.get("/niveles", getNiveles);
 
 export default router;

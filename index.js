@@ -6,6 +6,8 @@ import helmet from "helmet";
 import { connectToDatabase } from "./config/db.js";
 import { sync } from "./config/sync.js";
 import { Logger } from "./loaders/logger.js";
+import path from "path";
+import routes from "./routes/encuesta.routes.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,8 +19,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(cors());
 
+const indexPath = path.join(process.cwd(), "public", "index.html");
+
+app.use(express.static(path.join(process.cwd(), "public")));
+
+app.use("/api", routes);
 app.get("/", (req, res) => {
-  res.send("¡Hola, mundo!❤️‍🔥🥵");
+  res.sendFile(indexPath);
 });
 
 app.use((req, res, next) => {
