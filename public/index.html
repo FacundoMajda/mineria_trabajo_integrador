@@ -6,6 +6,10 @@
     <title>Formulario de Preguntas</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
@@ -34,7 +38,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
@@ -62,7 +66,7 @@
       </div>
     </nav>
 
-    <div class="container mt-5 w-70">
+    <div class="container mt-5 w-50">
       <h3>
         Ayúdanos a recopilar datos para mejorar la oferta educativa de nuestra
         institución!
@@ -93,14 +97,99 @@
         </div>
 
         <div class="form-group">
-          <label for="comentario">Comentario:</label>
+          <label for="materia-pregunta-1"
+            >¿Cuál asignatura te ha parecido más interesante?</label
+          >
+          <select class="form-control" id="materia-pregunta-1"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-2"
+            >¿Cuál asignatura consideras que necesita mejoras?</label
+          >
+          <select class="form-control" id="materia-pregunta-2"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-3"
+            >¿Cuál asignatura crees que ha tenido la metodología de enseñanza y
+            evaluación más efectiva?</label
+          >
+          <select class="form-control" id="materia-pregunta-3"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-4"
+            >¿Qué asignatura ha brindado el mayor apoyo docente?</label
+          >
+          <select class="form-control" id="materia-pregunta-4"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-5"
+            >¿Qué asignatura has encontrado más desafiante?</label
+          >
+          <select class="form-control" id="materia-pregunta-5"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-6"
+            >¿Qué asignatura ha brindado el menor apoyo docente?</label
+          >
+          <select class="form-control" id="materia-pregunta-6"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-7"
+            >¿Qué asignatura te ha gustado su contenido?</label
+          >
+          <select class="form-control" id="materia-pregunta-7"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-8">¿Y la que menos te ha gustado?</label>
+          <select class="form-control" id="materia-pregunta-8"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-9"
+            >¿Cuál te ha parecido que tiene el contenido más difícil de
+            aprender?</label
+          >
+          <select class="form-control" id="materia-pregunta-9"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-10"
+            >¿Cuál es la asignatura que tuvo mejor metodología de enseñanza y
+            evaluación?</label
+          >
+          <select class="form-control" id="materia-pregunta-10"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-11"
+            >¿Qué materia tuvo el mayor apoyo docente?</label
+          >
+          <select class="form-control" id="materia-pregunta-11"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="materia-pregunta-12">¿Y cuál tuvo el menor apoyo?</label>
+          <select class="form-control" id="materia-pregunta-12"></select>
+        </div>
+        <div class="form-group">
+          <label for="materia-pregunta-13"
+            >Dinos qué sugerencia tienes para mejorar el plan académico</label
+          >
           <textarea
             class="form-control"
-            id="comentario"
+            id="sugerencia-pregunta-5"
             rows="3"
-            placeholder="Escribe tu comentario aquí"
+            placeholder="Escribe tu sugerencia aquí"
           ></textarea>
         </div>
+
         <button type="submit" class="btn btn-primary" id="enviar">
           Enviar
         </button>

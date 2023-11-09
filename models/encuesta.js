@@ -28,46 +28,54 @@ const EncuestaModel = sequelize.define("Encuesta", {
 
   //asd
   respuesta1: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta2: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta3: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta4: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta5: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta6: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta7: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta8: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta9: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta10: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: true,
   },
   respuesta11: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  respuesta12: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  respuesta13: {
     type: DataTypes.STRING,
     allowNull: true,
   },

@@ -1,8 +1,3 @@
-// import { EncuestaModel } from "../models/encuesta.js";
-// import { MateriaModel } from "../models/materia.js";
-// import { RespuestaModel } from "../models/respuestajs";
-// import { PreguntaModel } from "../models/pregunta.js";
-// import { GeneroModel } from "../models/genero.js";
 import { Relations } from "./relations.js";
 import { sequelize } from "./db.js";
 import { Logger } from "../loaders/logger.js";
