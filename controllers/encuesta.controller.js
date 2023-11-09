@@ -19,8 +19,8 @@ export const guardarEncuesta = async (req, res) => {
       respuesta9,
       respuesta10,
       respuesta11,
-      respuesta12,
-      respuesta13,
+      // respuesta12,
+      // respuesta13,
     } = req.body;
 
     const nuevaEncuesta = await EncuestaModel.create({
@@ -39,8 +39,6 @@ export const guardarEncuesta = async (req, res) => {
       respuesta9,
       respuesta10,
       respuesta11,
-      respuesta12,
-      respuesta13,
     });
     Logger.info("Encuesta Creada");
     res.json({ message: "Encuesta guardada exitosamente" });
